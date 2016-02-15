@@ -7,49 +7,55 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="My Nanodegree Apps!"
+        android:text="@string/my_nanodegree_apps"
         android:id="@+id/welcomeHeading"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SPOTIFY STREAMER"
+        android:text="@string/spotify_streamer"
         android:id="@+id/appButton1"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeToast1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SCORES APP"
+        android:text="@string/scores_app"
         android:id="@+id/appButton2"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeToast2"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LIBRARY APP"
+        android:text="@string/library_app"
         android:id="@+id/appButton3"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeToast3"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BUILD IT BIGGER"
+        android:text="@string/build_it_bigger"
         android:id="@+id/appButton4"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeToast4"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="XYZ READER"
+        android:text="@string/xyz_reader"
         android:id="@+id/appButton5"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeToast5"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CAPSTONE: MY OWN APP"
+        android:text="@string/capstone"
         android:id="@+id/appButton6"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeToast6"/>
 </LinearLayout>

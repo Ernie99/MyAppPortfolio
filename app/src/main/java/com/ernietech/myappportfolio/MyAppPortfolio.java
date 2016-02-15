@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 public class MyAppPortfolio extends AppCompatActivity {
 
@@ -20,6 +21,45 @@ public class MyAppPortfolio extends AppCompatActivity {
                     .add(R.id.container, new ButtonViewFragment())
                     .commit();
         }
+    }
+
+    // Listeners for buttons
+    private static final String toastPrefix = "This button will launch ";
+
+    public void makeToast1(View view){
+        Toast.makeText(getApplicationContext(), toastPrefix + getString(R.string.spotify_streamer),
+                Toast.LENGTH_SHORT).show();
+        return;
+    }
+
+    public void makeToast2(View view){
+        Toast.makeText(getApplicationContext(), toastPrefix + getString(R.string.scores_app),
+                Toast.LENGTH_SHORT).show();
+        return;
+    }
+
+    public void makeToast3(View view){
+        Toast.makeText(getApplicationContext(), toastPrefix + getString(R.string.library_app),
+                Toast.LENGTH_SHORT).show();
+        return;
+    }
+
+    public void makeToast4(View view){
+        Toast.makeText(getApplicationContext(), toastPrefix + getString(R.string.build_it_bigger),
+                Toast.LENGTH_SHORT).show();
+        return;
+    }
+
+    public void makeToast5(View view){
+        Toast.makeText(getApplicationContext(), toastPrefix + getString(R.string.xyz_reader),
+                Toast.LENGTH_SHORT).show();
+        return;
+    }
+
+    public void makeToast6(View view){
+        Toast.makeText(getApplicationContext(), toastPrefix + getString(R.string.capstone),
+                Toast.LENGTH_SHORT).show();
+        return;
     }
 
     public static class ButtonViewFragment extends Fragment{
