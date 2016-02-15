@@ -1,23 +1,22 @@
 package com.ernietech.myappportfolio;
 
+import android.app.Activity;
+import android.app.Fragment;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-public class MyAppPortfolio extends AppCompatActivity {
+public class MyAppPortfolio extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_app_portfolio);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
+            getFragmentManager().beginTransaction()
                     .add(R.id.container, new ButtonViewFragment())
                     .commit();
         }
@@ -62,7 +61,7 @@ public class MyAppPortfolio extends AppCompatActivity {
         return;
     }
 
-    public static class ButtonViewFragment extends Fragment{
+    public static class ButtonViewFragment extends Fragment {
         @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
